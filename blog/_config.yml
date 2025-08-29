@@ -38,6 +38,9 @@ plugins:
 paginate: 3                  # Anzahl Posts pro Seite
 paginate_path: "/blog/page:num/"
 
+sass:
+  sass_dir: _sass
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
