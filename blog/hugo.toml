@@ -1,3 +1,8 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "/"         # Basis für relative URLs
+languageCode = "en-us"
+title = "Coaching Blog"
+theme = "ananke"
+
+# Relative URLs aktivieren
+relativeURLs = true
+canonifyURLs = false  # optional, sorgt dafür, dass Hugo keine absolute URL erzwingt

@@ -1,0 +1,634 @@
+ /* Index Seite */
+/* Grundfarben & Fonts */
+    :root {
+      --text: #2D2D2D;
+      --accent: #FF6F61;
+      --accent-hover: #E64B45;
+      --bg-body: #f5f5f5;
+      /* sehr helles Grau */
+      /* zartes Grau für den Hintergrund */
+      --bg-box: #ffffff;
+      /* Weiß für Boxen */
+      --title-font: "Playfair Display", serif;
+      --ui-font: "Inter", sans-serif;
+      --hero-text-dim: rgba(255, 255, 255, 0.9);
+    }
+
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+
+
+
+    /* Überschriften */
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    h2,
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 4px;
+      background: var(--accent);
+      margin-right: 10px;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+
+    /* Hero */
+    /* Hero Wrapper */
+    #hero {
+      position: relative;
+      width: 100vw;
+      max-width: 1920px;
+      aspect-ratio: 16/9;
+      overflow: hidden;
+      margin: 0 auto 4rem auto;
+      /* unten 4rem Abstand */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Content vertikal zentriert */
+    }
+
+    /* Hero Bild */
+    #hero img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(4px);
+      /* gewünschter Blur */
+      z-index: 0;
+      pointer-events: none;
+      /* Bild ignoriert Touch/Click */
+    }
+
+    /* Hero Content Basis */
+    #hero-content {
+      position: relative;
+      z-index: 2;
+      /* über dem Bild */
+      opacity: 0;
+      /* Start: unsichtbar */
+      transition: opacity 1.2s ease;
+      /* weiches Einblenden */
+      will-change: transform;
+      /* für Parallax */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      /* vertikal mittig */
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Sichtbar beim Laden */
+    #hero-content.load-visible {
+      opacity: 1;
+    }
+
+
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      #hero {
+        aspect-ratio: 1/1;
+      }
+
+      #hero img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    #hero-content.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero-title {
+      font-family: var(--title-font);
+      font-weight: 700;
+      font-size: clamp(40px, 8vw, 92px);
+      margin: 0 0 0.25em;
+      text-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .subtitle {
+      margin: 0 0 1.25em;
+      font-family: var(--ui-font);
+      font-weight: 400;
+      font-size: clamp(20px, 2.6vw, 36px);
+      line-height: 1.3;
+      color: var(--hero-text-dim);
+      letter-spacing: 0.2px;
+      text-wrap: balance;
+    }
+
+    /* Scroll Arrow */
+    #scroll-arrow {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: white;
+      animation: bounce 1.5s infinite;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(10px);
+      }
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      /* besser als block, passt sich Textbreite an */
+      background: var(--accent);
+      color: white;
+      /* keine Variable var(--btn-text), sonst undefiniert */
+      padding: 0.75rem 1.5rem;
+      /* etwas größer */
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      margin: 1.5rem auto 0 auto;
+      text-decoration: none;
+      /* kein Unterstrich */
+      transition: background 0.3s ease, transform 0.3s ease;
+      white-space: nowrap;
+      /* verhindert Umbruch */
+    }
+
+
+    .btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    section {
+      width: 100%;
+      /* statt 100vw */
+      padding: 0rem;
+      /* bleibt */
+      margin: 0 auto;
+      /* keine Seitenscrolls mehr */
+      overflow-x: hidden;
+      /* Sicherheit */
+    }
+
+    /* Boxen */
+    /* Allgemeine Boxen */
+    .box {
+      background: var(--bg-box);
+      border-radius: 9px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      /* vertikaler Abstand zu allen nachfolgenden Elementen */
+      max-width: 100%;
+      
+      
+      position: relative;
+    }
+
+  
+
+/* Plus-Button */
+.expand-toggle {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.expand-toggle.active {
+  transform: rotate(45deg); /* Plus wird zu Kreuz */
+}
+
+/* Inhalt ausklappen */
+.expandable-content {
+  display: none;
+  margin-top: 1rem;
+  transition: max-height 0.5s ease;
+}
+
+
+    /* Zwei Boxen nebeneinander */
+    .two-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      /* horizontaler und vertikaler Abstand zwischen den Boxen */
+    }
+
+    .two-boxes .box {
+      flex: 1 1 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+    }
+
+    /* Mobile: Boxen untereinander, volle Breite */
+    @media (max-width: 900px) {
+      .two-boxes {
+        flex-direction: column;
+        gap: 0;
+        /* vertikaler Abstand übernimmt margin-bottom der Boxen */
+      }
+
+      .two-boxes .box {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    .box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+
+    /* Zwei Boxen nebeneinander */
+
+
+
+
+
+
+    /* Bilder in Boxen */
+    .two-boxes .box img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      overflow: hidden;
+    }
+
+    /* Body & Grundlayout */
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background: var(--bg-body);
+    }
+
+    /* Header & Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid #ddd;
+      padding: 0.8rem 2rem;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    /* Desktop Navigation */
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      margin-left: auto;
+      /* Navigation nach rechts schieben */
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Burger-Icon */
+    .burger {
+      display: none;
+      /* standardmäßig ausgeblendet */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      gap: 5px;
+      margin-left: auto;
+      /* immer rechts im Header */
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background: var(--text);
+      border-radius: 2px;
+    }
+
+    /* Burger Menü aktiv */
+    .nav-links.nav-open {
+      display: flex !important;
+      position: absolute;
+      top: 60px;
+      right: 2rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    /* Responsive für kleine Bildschirme */
+    @media (max-width:900px) {
+      .nav-links {
+        display: none;
+      }
+
+      /* Desktop-Navigation ausblenden */
+      .burger {
+        display: flex;
+      }
+
+      /* Burger sichtbar */
+    }
+
+    /* Language Dropdown */
+    .language-dropdown {
+      position: relative;
+      margin-left: 2rem;
+      font-weight: 600;
+    }
+
+    .language-dropdown button {
+      background: none;
+      border: 1px solid var(--text);
+      border-radius: 5px;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    .language-dropdown ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: none;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .language-dropdown ul li {
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    .language-dropdown ul li:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .language-dropdown.active ul {
+      display: block;
+    }
+
+    /* Forms */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: var(--accent-hover);
+    }
+
+    /* Kontakt-Einladung volle Breite */
+    /* Kontakt-Einladung volle Breite */
+    #contact {
+      background-color: #FF7B66;
+      /* heller, freundlicher Orange-Ton */
+      color: #2D2D2D;
+      /* Kontrastfarbe für normalen Text */
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 1.1rem;
+      border-radius: 6px 6px 0 0;
+      /* sanfte Abrundung oben */
+    }
+
+    #contact a {
+      display: inline-flex;
+      /* Icon + Text auf einer Linie */
+      align-items: center;
+      /* vertikal mittig ausrichten */
+      gap: 0.5rem;
+      /* Abstand zwischen Icon und Adresse */
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    #contact a:hover {
+      color: #FFD3CB;
+    }
+
+    #contact i.fa-envelope {
+      font-size: 1.1em;
+      /* Icon-Größe */
+    }
+
+    /* Über mich innerhalb Box */
+    .about-box .about-flex {
+      display: flex;
+      align-items: stretch;
+      /* beide gleich hoch */
+      gap: 2rem;
+    }
+
+    /* Portrait-Spalte */
+    .about-box .about-img {
+      flex: 0 0 250px;
+      /* fixe Breite, kannst du anpassen */
+      display: flex;
+      /* damit Bild sich strecken darf */
+    }
+
+    .about-box .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* füllt den Container, cropt querformatig */
+      border-radius: 6px;
+    }
+
+    /* Textbereich */
+    .about-box .about-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      .about-box .about-flex {
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .about-box .about-img {
+        width: 100%;
+        height: auto;
+        /* Bildhöhe frei */
+      }
+
+      .about-box .about-img img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0rem;
+      }
+    }
+
+    /* Icon Styling */
+    .box-icon {
+      display: block;
+      /* wird wie ein Block behandelt */
+      margin-left: auto;
+      /* links automatisch */
+      margin-right: auto;
+      /* rechts automatisch → zentriert */
+      margin-bottom: 1rem;
+      /* Abstand nach unten */
+      text-align: center;
+      /* falls das Icon intern extra Breite hat */
+      color: var(--accent);
+      font-size: 3rem;
+      width: fit-content;
+      /* sorgt dafür, dass das Icon nur so breit ist wie nötig */
+    }
+
+.more-link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  position: relative;
+}
+
+.more-link::before {
+  content: "\f061"; /* Font Awesome Pfeil: fa-arrow-right */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* solid style */
+  margin-right: 0.3rem;
+  display: inline-block;
+}
+
+
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+
+
+    /* Utility */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+
+
+    /* ===== Styles Detail-Seite ===== */
+.detail-hero img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
