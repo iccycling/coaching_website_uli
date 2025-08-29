@@ -1,13 +1,11 @@
 ---
 ---
 
-@import "mystyle";
+@import "minima";   // Theme CSS
+@import "mystyle";  // deine eigenen Styles
 
-/* Boxen direkt sichtbar, ohne Einfliegen */
 .box {
   opacity: 1 !important;
   transform: translateY(0) !important;
   transition: none !important;
 }
-
-
