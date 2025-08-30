@@ -10,5 +10,5 @@ canonifyURLs = false  # optional, sorgt dafür, dass Hugo keine absolute URL erz
 
 [pagination]
   disableAliases = true
-  pagerSize = 2
+  pagerSize = 6
   path = "page"

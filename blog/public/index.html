@@ -8,93 +8,183 @@
 
   
   <link rel="stylesheet" href="./css/main.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
 </head>
 <body>
   
-<head><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script></head>
-<header>
-  <div class="logo">
-    <a href="./" style="text-decoration:none; color:inherit;"><strong>Kaida</strong></a>
-  </div>
-  <nav class="nav-links">
-    <a href="./">Hauptwebsite</a>
-    <a href="./blog/">Blog</a>
-    <a href="./posts/">Alle Posts</a>
-    <a href="./about-blog/">Über Blog</a>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaida Blog</title>
 
-  <main>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+     
     
 
+    
+
+   
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="./" style="text-decoration:none; color:inherit;"><strong>Kaida</strong></a>
+    </div>
+    <nav class="nav-links">
+      <a href="./">Hauptwebsite</a>
+      <a href="./blog/">Blog</a>
+      <a href="./posts/">Alle Posts</a>
+      <a href="./about-blog/">Über Blog</a>
+    </nav>
+  </header>
+
+  
 <section id="hero">
-  <img src="./images/walk.jpg" alt="Hero Image">
+  <img src="images/walk.jpg" alt="Hero Image">
   <div id="hero-content">
-    <h1 class="hero-title">Kaida</h1>
-    <p class="subtitle">Persönliches Coaching & Begleitung</p>
-    <a href="#contact" class="btn">Jetzt Kontakt aufnehmen</a>
+    <h1 class="hero-title" data-de="Blog" data-fr="Blog" data-en="Blog">Blog</h1>
+    <p class="subtitle" data-de="Alle aktuellen Artikel & Beiträge" data-fr="Tous les articles et publications"
+      data-en="All current articles & posts">
+      Alle aktuellen Artikel & Beiträge
+    </p>
+    <a href="#contact" class="btn" data-de="Jetzt Kontakt aufnehmen" data-fr="Contactez-moi maintenant"
+      data-en="Get in touch now">Jetzt Kontakt aufnehmen</a>
   </div>
   <div id="scroll-arrow" aria-hidden="true">&#x2193;</div>
 </section>
 
-<section class="container">
-  <h1>Blog</h1>
+  <main class="container">
+    <h1>Blog</h1>
 
-  
-  
-  
+    
+    
 
-  
-  
-  <div class="box">
-    <a href="./posts/test-post/" class="post-title">Mein erster Blogpost</a>
-    
-    <p class="post-summary"><p>Hallo Welt!</p>
-<p>Das ist ein Test des Decap CMS Previews.</p></p>
-    
-  </div>
-  
-  <div class="box">
-    <a href="./posts/vierter-post/" class="post-title">Mein 4. Post</a>
-    
-    <p class="post-summary"><p>Das ist der Inhalt meines ersten Blogposts.<br>
+    <div class="two-boxes">
+      
+        <div class="box">
+          
+          
+            <img src="./images/erster-post/foto1.jpg" alt="Preview Image" class="preview-img">
+          
+
+          
+
+          
+          <h2 class="post-title">Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</h2>
+
+          
+          
+            <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
+          
+
+          
+          <a href="./posts/erster-post/" class="more-link">
+            <span class="more-text">Weiterlesen</span>
+          </a>
+         
+        </div>
+      
+        <div class="box">
+          
+          
+
+          
+
+          
+          <h2 class="post-title">Mein 4. Post</h2>
+
+          
+          
+            <p class="post-summary"><p>Das ist der Inhalt meines ersten Blogposts.<br>
 Herzlich willkommen auf meinem Blog!</p></p>
-    
-  </div>
-  
-  <div class="box">
-    <a href="./posts/dritter-post/" class="post-title">Mein 3. Post</a>
-    
-    <p class="post-summary"><p>Das ist der Inhalt meines ersten Blogposts.<br>
-Herzlich willkommen auf meinem Blog!</p></p>
-    
-  </div>
-  
+          
 
-  
-  
-  <div class="more-posts-button">
+          
+          <a href="./posts/vierter-post/" class="more-link">
+            <span class="more-text">Weiterlesen</span>
+          </a>
+         
+        </div>
+      
+        <div class="box">
+          
+          
+
+          
+
+          
+          <h2 class="post-title">Mein 3. Post</h2>
+
+          
+          
+            <p class="post-summary"><p>Das ist der Inhalt meines ersten Blogposts.<br>
+Herzlich willkommen auf meinem Blog!</p></p>
+          
+
+          
+          <a href="./posts/dritter-post/" class="more-link">
+            <span class="more-text">Weiterlesen</span>
+          </a>
+         
+        </div>
+      
+        <div class="box">
+          
+          
+
+          
+
+          
+          <h2 class="post-title">Mein zweiter Post</h2>
+
+          
+          
+            <p class="post-summary"><p>Das ist der Inhalt meines ersten Blogposts.<br>
+Herzlich willkommen auf meinem Blog!</p></p>
+          
+
+          
+          <a href="./posts/zweiter-post/" class="more-link">
+            <span class="more-text">Weiterlesen</span>
+          </a>
+         
+        </div>
+      
+    </div>
+
+    
+  <div class="more-posts-button" style="text-align: center; margin: 30px 0;">
     <a href="./posts/" class="btn">Weitere Posts</a>
   </div>
-  
-</section>
 
 
-<section id="contact">
-  <div class="container">
-    <p>
-      Ich freue mich darauf, von Ihnen zu hören!<br>
-      <a href="mailto:kontakt@kaida.de"><i class="fa-solid fa-envelope"></i> kontakt@kaida.de</a>
-    </p>
-  </div>
-</section>
+  </main>
 
 
-<footer>
-  <p>© 2025 Uli Kohl · Impressum · Datenschutz</p>
-</footer>
+  <footer>
+    <p>© 2025 Uli Kohl · Impressum · Datenschutz</p>
+  </footer>
+</body>
+</html>
 
+
+
+  <main>
+    
   </main>
 
   

@@ -2,7 +2,7 @@
 
 title: "Mein erster Blogpost"
 
-date: 2025-08-30
+date: 2021-08-30
 
 cover: "/images/uploads/beispiel.jpg"
 

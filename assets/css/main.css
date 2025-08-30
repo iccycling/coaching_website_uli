@@ -21,7 +21,16 @@
       box-sizing: border-box;
     }
 
-
+ /* Preview Image Querformat 3:2 über der Box */
+    .preview-img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      display: block;
+      background-color: #eee; /* Platzhalterfarbe falls kein Bild */
+    }
 
 
     /* Überschriften */

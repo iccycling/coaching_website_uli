@@ -1,0 +1,37 @@
+/* Ziel alle Inhalte im CMS-iframe */
+.nc-entry-widget,          /* Text-Widget */
+.nc-markdown-preview,      /* Markdown Vorschau */
+.nc-pane-preview,          /* Haupt-Pane Preview */
+.nc-widget-preview,        /* einzelne Widgets */
+.nc-root,                  /* Root Container */
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Bilder */
+.nc-entry-widget img,
+.nc-markdown-preview img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+}
+
+/* Überschriften */
+.nc-entry-widget h1,
+.nc-markdown-preview h1,
+.nc-entry-widget h2,
+.nc-markdown-preview h2,
+.nc-entry-widget h3,
+.nc-markdown-preview h3 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #222222;
+}
+
+/* Absätze */
+.nc-entry-widget p,
+.nc-markdown-preview p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}

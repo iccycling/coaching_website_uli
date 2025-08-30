@@ -1,19 +1,34 @@
 backend:
-  name: git-gateway # git-gateway 
-  branch: main # branch: main Branch to update (optional; defaults to master)
-media_folder: static/img
-public_folder: /img
+  name: git-gateway
+  branch: main
+
+media_folder: ""      # Bilder landen direkt im Post-Ordner
+public_folder: ""     # relative Pfade funktionieren automatisch
+
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview: true 
-    editor:
-      preview: false
+    slug: "{{slug}}"
+    media_folder: ""        # -> Bilder im gleichen Ordner wie index.md speichern
+    public_folder: ""       # -> relative Pfade verwenden
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Titel", name: "title", widget: "string" }
+      - label: "Inhalt"
+        name: "body"
+        widget: "markdown"
+        hint: |
+          ✍️ Schreibe hier deinen Beitrag in Markdown.
+          Beispiel Bild einfügen:
+          ![Alt-Text](foto1.jpg)
+
+
+
+
+
+# CMS-Vorschau CSS einbinden
+editor:
+  preview: true
+  styles:
+    - /css/cms-preview.css

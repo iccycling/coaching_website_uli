@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mein erster Post</title>
+  <title>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten – Kaida</title>
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,49 +16,70 @@
 
   
   <link rel="stylesheet" href="../../css/main.css">
+
+  <style>
+  
+    .box img {
+      max-width: 80%;
+      max-height: 80%;
+      display: block;
+      margin: 1rem auto;
+    }
+    .box blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1rem;
+      margin-left: 0;
+      color: #555;
+      font-style: italic;
+    }
+
+     
+    .detail-hero img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <div class="logo">
-    <a href="../../" style="text-decoration:none; color:inherit;"><strong>Kaida</strong></a>
-  </div>
-  <nav class="nav-links">
-    <a id="back-button" href="../../">Zurück</a>
-    <select id="language-select">
-      <option value="de" selected>🇩🇪 Deutsch</option>
-      <option value="fr">🇫🇷 Français</option>
-      <option value="en">🇬🇧 English</option>
-    </select>
-  </nav>
-</header>
+  <header>
+    <div class="logo">
+      <a href="../../"><strong>Kaida</strong></a>
+    </div>
+    <nav class="nav-links">
+      <a id="back-button" href="../../">Zurück</a>
+    </nav>
+  </header>
 
-<section class="detail-hero">
-  <img src="../../images/walk.jpg" alt="Detail Hero Image">
-</section>
+  
+  <section class="detail-hero">
+    <img src="../../images/walk.jpg" alt="Detail Hero Image">
+  </section>
 
-<section class="container">
-  <div class="box">
-    <h1>Mein erster Post</h1>
-    <p>Das ist der Inhalt meines ersten Blogposts.<br>
-Herzlich willkommen auf meinem Blog!</p>
+  
+  <section class="container">
+    <div class="box">
+      <h1>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</h1>
+      <p>Dies ist ein kompakter Beispielpost für unseren Blog.<br>
+Du kannst Titel, Bilder, Code und Zitate direkt einfügen.</p>
+<h2 id="textbeispiel">Textbeispiel</h2>
+<p>Hier kannst du normalen Text schreiben. Markdown funktioniert direkt.</p>
+<h2 id="bilder-einfügen">Bilder einfügen</h2>
+<p><img src="../../images/erster-post/foto1.jpg" alt="Foto 1"><br>
+<img src="../../images/erster-post/foto2.jpg" alt="Foto 2"></p>
+<h2 id="code-beispiel">Code-Beispiel</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hallo Welt&#34;</span>)
+</span></span></code></pre></div>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <footer>
+    <p>© 2025 Uli Kohl · Impressum · Datenschutz</p>
+  </footer>
 
-<section class="container">
-  <div class="box">
-    
-    
-      <p>➡ <a href="../../posts/zweiter-post/">Mein zweiter Post</a></p>
-    
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Uli Kohl · Impressum · Datenschutz</p>
-</footer>
-
-<script src="../../js/main.js"></script>
+  <script src="../../js/main.js"></script>
 </body>
 </html>
