@@ -6,3 +6,9 @@ theme = "ananke"
 # Relative URLs aktivieren
 relativeURLs = true
 canonifyURLs = false  # optional, sorgt dafür, dass Hugo keine absolute URL erzwingt
+
+
+[pagination]
+  disableAliases = true
+  pagerSize = 2
+  path = "page"

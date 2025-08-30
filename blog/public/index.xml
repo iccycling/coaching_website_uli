@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coaching Blog</title>
+    <title>Alle Blogposts on Coaching Blog</title>
     <link>//localhost:1313/</link>
-    <description>Recent content on Coaching Blog</description>
+    <description>Recent content in Alle Blogposts on Coaching Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mein 4. Post</title>
+      <link>//localhost:1313/posts/vierter-post/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/vierter-post/</guid>
+      <description>&lt;p&gt;Das ist der Inhalt meines ersten Blogposts.&lt;br&gt;&#xA;Herzlich willkommen auf meinem Blog!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mein 3. Post</title>
+      <link>//localhost:1313/posts/dritter-post/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/dritter-post/</guid>
+      <description>&lt;p&gt;Das ist der Inhalt meines ersten Blogposts.&lt;br&gt;&#xA;Herzlich willkommen auf meinem Blog!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mein zweiter Post</title>
+      <link>//localhost:1313/posts/zweiter-post/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/zweiter-post/</guid>
+      <description>&lt;p&gt;Das ist der Inhalt meines ersten Blogposts.&lt;br&gt;&#xA;Herzlich willkommen auf meinem Blog!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mein erster Post</title>
+      <link>//localhost:1313/posts/erster-post/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/erster-post/</guid>
+      <description>&lt;p&gt;Das ist der Inhalt meines ersten Blogposts.&lt;br&gt;&#xA;Herzlich willkommen auf meinem Blog!&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
