@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/garten/</loc>
+    <loc>/tags/garten/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/permakultur/</loc>
+    <loc>/tags/permakultur/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/permakultur-post/</loc>
+    <loc>/posts/permakultur-post/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/zweites-beispiel/</loc>
+    <loc>/posts/zweites-beispiel/</loc>
     <lastmod>2025-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2025-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/tutorial/</loc>
+    <loc>/tags/tutorial/</loc>
     <lastmod>2025-08-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/erster-post/</loc>
+    <loc>/posts/erster-post/</loc>
     <lastmod>2025-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/test/</loc>
+    <loc>/tags/test/</loc>
     <lastmod>2025-08-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/vierter-post/</loc>
+    <loc>/posts/vierter-post/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/dritter-post/</loc>
+    <loc>/posts/dritter-post/</loc>
     <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/zweiter-post/</loc>
+    <loc>/posts/zweiter-post/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/test-post/</loc>
+    <loc>/posts/test-post/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/nulter-post/</loc>
+    <loc>/posts/nulter-post/</loc>
     <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>
