@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Coaching Blog</title>
-    <link>//localhost:1313/tags/test/</link>
+    <link>/tags/test/</link>
     <description>Recent content in Test on Coaching Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</title>
-      <link>//localhost:1313/posts/erster-post/</link>
-      <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/erster-post/</guid>
+      <link>/posts/erster-post/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/erster-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>4. Post</title>
-      <link>//localhost:1313/posts/vierter-post/</link>
+      <link>/posts/vierter-post/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/vierter-post/</guid>
+      <guid>/posts/vierter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>3. Post</title>
-      <link>//localhost:1313/posts/dritter-post/</link>
+      <link>/posts/dritter-post/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/dritter-post/</guid>
+      <guid>/posts/dritter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>2. Post</title>
-      <link>//localhost:1313/posts/zweiter-post/</link>
+      <link>/posts/zweiter-post/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/zweiter-post/</guid>
+      <guid>/posts/zweiter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>1. Post</title>
-      <link>//localhost:1313/posts/test-post/</link>
+      <link>/posts/test-post/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/test-post/</guid>
+      <guid>/posts/test-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>0. Post</title>
-      <link>//localhost:1313/posts/nulter-post/</link>
+      <link>/posts/nulter-post/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/nulter-post/</guid>
+      <guid>/posts/nulter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
   </channel>

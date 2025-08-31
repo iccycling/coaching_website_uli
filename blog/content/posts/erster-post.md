@@ -1,6 +1,6 @@
 ---
 title: "Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten"
-date: 2025-08-30
+date: 2025-08-28
 draft: false
 featured_image: "/images/erster-post/foto1.jpg"
 summary: "Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht."

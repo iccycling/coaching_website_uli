@@ -1,6 +1,6 @@
 ---
 title: "Beispiel Blog: So erstellst du einen Blogpost"
-date: 2025-08-31
+date: 2025-08-30
 author: "Frederik Beck"
 draft: false
 featured_image: "/images/zweiter-post/bike1.jpg"
