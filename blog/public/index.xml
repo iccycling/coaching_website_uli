@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alle Blogposts on Coaching Blog</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in Alle Blogposts on Coaching Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Permakultur: Nachhaltig Gärtnern für die Zukunft</title>
-      <link>/posts/permakultur-post/</link>
+      <link>//localhost:1313/posts/permakultur-post/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/permakultur-post/</guid>
+      <guid>//localhost:1313/posts/permakultur-post/</guid>
       <description>Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann.</description>
     </item>
     <item>
       <title>Beispiel Blog: So erstellst du einen Blogpost</title>
-      <link>/posts/zweites-beispiel/</link>
+      <link>//localhost:1313/posts/zweites-beispiel/</link>
       <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/zweites-beispiel/</guid>
+      <guid>//localhost:1313/posts/zweites-beispiel/</guid>
       <description>Ein Tutorial-Beitrag, wie man einen Blogpost erstellt, Bilder, Galerien, Zitate, Überschriften und Code einfügt.</description>
     </item>
     <item>
       <title>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</title>
-      <link>/posts/erster-post/</link>
+      <link>//localhost:1313/posts/erster-post/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/erster-post/</guid>
+      <guid>//localhost:1313/posts/erster-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>4. Post</title>
-      <link>/posts/vierter-post/</link>
+      <link>//localhost:1313/posts/vierter-post/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/vierter-post/</guid>
+      <guid>//localhost:1313/posts/vierter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>3. Post</title>
-      <link>/posts/dritter-post/</link>
+      <link>//localhost:1313/posts/dritter-post/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/dritter-post/</guid>
+      <guid>//localhost:1313/posts/dritter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>2. Post</title>
-      <link>/posts/zweiter-post/</link>
+      <link>//localhost:1313/posts/zweiter-post/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/zweiter-post/</guid>
+      <guid>//localhost:1313/posts/zweiter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>1. Post</title>
-      <link>/posts/test-post/</link>
+      <link>//localhost:1313/posts/test-post/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/test-post/</guid>
+      <guid>//localhost:1313/posts/test-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>0. Post</title>
-      <link>/posts/nulter-post/</link>
+      <link>//localhost:1313/posts/nulter-post/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/posts/nulter-post/</guid>
+      <guid>//localhost:1313/posts/nulter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
   </channel>
