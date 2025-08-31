@@ -15,16 +15,19 @@
     <lastmod>2025-08-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/vierter-post/</loc>
-    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/dritter-post/</loc>
-    <lastmod>2025-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/zweiter-post/</loc>
-    <lastmod>2025-02-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/test-post/</loc>
-    <lastmod>2021-08-30T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/nulter-post/</loc>
+    <lastmod>2019-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/</loc>
   </url><url>

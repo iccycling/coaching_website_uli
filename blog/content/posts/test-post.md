@@ -1,18 +1,9 @@
 ---
-
-title: "Mein erster Blogpost"
-
-date: 2021-08-30
-
-cover: "/images/uploads/beispiel.jpg"
-
+title: "1. Post"
+date: 2020-01-01
+draft: false
+featured_image: ""
+summary: "Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht."
 ---
 
-
-
-Hallo Welt!  
-
-Das ist ein Test des Decap CMS Previews.
-
-
-
+Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.

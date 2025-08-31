@@ -23,32 +23,39 @@
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
-      <title>Mein 4. Post</title>
+      <title>4. Post</title>
       <link>//localhost:1313/posts/vierter-post/</link>
-      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/vierter-post/</guid>
-      <description>&lt;p&gt;Das ist der Inhalt meines ersten Blogposts.&lt;br&gt;&#xA;Herzlich willkommen auf meinem Blog!&lt;/p&gt;</description>
+      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
-      <title>Mein 3. Post</title>
+      <title>3. Post</title>
       <link>//localhost:1313/posts/dritter-post/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/dritter-post/</guid>
-      <description>&lt;p&gt;Das ist der Inhalt meines ersten Blogposts.&lt;br&gt;&#xA;Herzlich willkommen auf meinem Blog!&lt;/p&gt;</description>
+      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
-      <title>Mein zweiter Post</title>
+      <title>2. Post</title>
       <link>//localhost:1313/posts/zweiter-post/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/zweiter-post/</guid>
-      <description>&lt;p&gt;Das ist der Inhalt meines ersten Blogposts.&lt;br&gt;&#xA;Herzlich willkommen auf meinem Blog!&lt;/p&gt;</description>
+      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
-      <title>Mein erster Blogpost</title>
+      <title>1. Post</title>
       <link>//localhost:1313/posts/test-post/</link>
-      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/test-post/</guid>
-      <description>&lt;p&gt;Hallo Welt!&lt;/p&gt;&#xA;&lt;p&gt;Das ist ein Test des Decap CMS Previews.&lt;/p&gt;</description>
+      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
+    </item>
+    <item>
+      <title>0. Post</title>
+      <link>//localhost:1313/posts/nulter-post/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/nulter-post/</guid>
+      <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mein zweiter Post – Kaida</title>
+  <title>2. Post – Kaida</title>
 
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,7 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
 
 
   
@@ -72,9 +71,8 @@
   
   <section class="container">
     <div class="box">
-      <h1>Mein zweiter Post</h1>
-      <p>Das ist der Inhalt meines ersten Blogposts.<br>
-Herzlich willkommen auf meinem Blog!</p>
+      <h1>2. Post</h1>
+      <p>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
 
     </div>
   </section>
@@ -85,10 +83,9 @@ Herzlich willkommen auf meinem Blog!</p>
       
         <div class="box">
           <div style="font-size: 2rem; margin-bottom: 1rem; text-align: left;">&#8592;</div>
-          <h2 class="post-title">Mein erster Blogpost</h2>
+          <h2 class="post-title">1. Post</h2>
           
-            <p class="post-summary"><p>Hallo Welt!</p>
-<p>Das ist ein Test des Decap CMS Previews.</p></p>
+            <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
           
           <a href="../../posts/test-post/" class="more-link">
             <span class="more-text">Weiterlesen</span>
@@ -99,10 +96,9 @@ Herzlich willkommen auf meinem Blog!</p>
       
         <div class="box">
           <div style="font-size: 2rem; margin-bottom: 1rem; text-align: right;">&#8594;</div>
-          <h2 class="post-title">Mein 3. Post</h2>
+          <h2 class="post-title">3. Post</h2>
           
-            <p class="post-summary"><p>Das ist der Inhalt meines ersten Blogposts.<br>
-Herzlich willkommen auf meinem Blog!</p></p>
+            <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
           
           <a href="../../posts/dritter-post/" class="more-link">
             <span class="more-text">Weiterlesen</span>
@@ -162,42 +158,9 @@ Herzlich willkommen auf meinem Blog!</p></p>
 
     });
 
+</script>
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var grid = document.querySelector('.masonry-grid');
-  if (!grid) return;
-
- 
-
-var grid = document.querySelector('.masonry-grid');
-var msnry = new Masonry(grid, {
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  gutter: 10
-});
-
-imagesLoaded(grid).on('progress', function() {
-  msnry.layout();
-});
-
-window.addEventListener('resize', function() {
-  msnry.layout();
-});
-
-imagesLoaded(grid, function() {
-  msnry.layout();
-});
-
-  
-  function layoutMasonry() {
-    msnry.layout();
-  }
-
-setTimeout(function() { msnry.layout(); }, 1000);
-imagesLoaded(grid, function() { msnry.layout(); });
-});
-  </script>
 
 </body>
 </html>
