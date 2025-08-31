@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beispiel Blog: So erstellst du einen Blogpost – Kaida</title>
@@ -117,7 +117,7 @@ Dies ist die Bildunterschrift.
     <div class="swiper-wrapper">
       
         <div class="swiper-slide">
-          <img src="../../images/zweiter-post/bike2.jpg" alt="Galerie Bild" loading="lazy">
+          <img src="../../images/zweiter-post/bike6.jpg" alt="Galerie Bild" loading="lazy">
         </div>
       
         <div class="swiper-slide">
@@ -126,6 +126,14 @@ Dies ist die Bildunterschrift.
       
         <div class="swiper-slide">
           <img src="../../images/zweiter-post/bike4.jpg" alt="Galerie Bild" loading="lazy">
+        </div>
+      
+        <div class="swiper-slide">
+          <img src="../../images/zweiter-post/bike5.jpg" alt="Galerie Bild" loading="lazy">
+        </div>
+      
+        <div class="swiper-slide">
+          <img src="../../images/zweiter-post/bike2.jpg" alt="Galerie Bild" loading="lazy">
         </div>
       
     </div>
@@ -141,24 +149,30 @@ Dies ist die Bildunterschrift.
   width: 100%;
   position: relative;
   
+  
   overflow: hidden;
 }
 
 .gallery-swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;  
 }
 
 .gallery-swiper .swiper-slide img {
-  width: 100%;
-  aspect-ratio: 3 / 2;
+  width: 100%; 
+  aspect-ratio: 5 / 4;
   max-height: 70vh;
   object-fit: contain;
   display: block;
   border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .gallery-swiper .swiper-slide img {
+    aspect-ratio: 1 / 1;  
+   
+  }
 }
 
 .swiper-button-next,
@@ -173,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function(){
   new Swiper('.gallery-swiper', {
     slidesPerView: 1,
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 0,
     pagination: {
       el: '.swiper-pagination',
       clickable: true
