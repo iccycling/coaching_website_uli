@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beispiel Blog: So erstellst du einen Blogpost – Kaida</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Lora:wght@400;700&family=Montserrat:wght@500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+  
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <style>
+    .box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .box blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1rem;
+      margin-left: 0;
+      color: #555;
+      font-style: italic;
+    }
+
+     
+    .detail-hero img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="../../"><strong>Kaida</strong></a>
+    </div>
+    <nav class="nav-links">
+      <a id="back-button" href="../../">Zurück</a>
+    </nav>
+  </header>
+
+  
+  <section class="detail-hero">
+    <img src="../../images/walk.jpg" alt="Detail Hero Image">
+  </section>
+
+  
+  <section class="container">
+    <div class="box">
+      <h1>Beispiel Blog: So erstellst du einen Blogpost</h1>
+      <p>Markdown ist ideal, um <strong>Text strukturiert</strong> zu schreiben.<br>
+Du kannst einfache Formatierungen verwenden, wie <strong>fett</strong>, <em>kursiv</em> oder <code>Code</code> inline.</p>
+<hr>
+<h2 id="überschriften">Überschriften</h2>
+<p>Markdown unterstützt verschiedene Überschriften-Level:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># H1 – größte Überschrift
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## H2 – etwas kleiner
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">### H3 – noch kleiner
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#### H4
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">##### H5
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">###### H6 – kleinste Überschrift
+</span></span></span></code></pre></div><h1 id="h1--größte-überschrift">H1 – größte Überschrift</h1>
+<h2 id="h2--etwas-kleiner">H2 – etwas kleiner</h2>
+<h3 id="h3--noch-kleiner">H3 – noch kleiner</h3>
+<p>&hellip;</p>
+<hr>
+<h2 id="zitate-einfügen">Zitate einfügen</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">Dies ist ein Zitat.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">— Autor`
+</span></span></span></code></pre></div><blockquote>
+<p>Dies ist ein Zitat.
+— Autor</p></blockquote>
+<hr>
+<h2 id="bilder-einfügen">Bilder einfügen</h2>
+<p>Ein einzelnes Bild mit Unterschrift:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Beschreibung des Bildes</span>](<span style="color:#a6e22e">/images/zweiter-post/bike1.jpg</span>)  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;p style=&#34;margin-top:2px; text-align:center; font-style:italic;&#34;&gt;
+</span></span><span style="display:flex;"><span>Dies ist die Bildunterschrift.
+</span></span><span style="display:flex;"><span>&lt;/p&gt;
+</span></span></code></pre></div><p><img src="../../images/zweiter-post/bike1.jpg" alt="Beschreibung des Bildes"></p>
+<p style="margin-top:2px; text-align:center; font-style:italic;">
+Dies ist die Bildunterschrift.
+</p>
+<hr>
+<h2 id="swiper-galerie-lightboxslider">Swiper Galerie (Lightbox/Slider)</h2>
+<p>Mehrere Bilder in einer <strong>Swiper-Galerie</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; gallery-swipe images=&#34;/images/zweiter-post/bike2.jpg,/images/zweiter-post/bike3.jpg,/images/zweiter-post/bike4.jpg&#34; &gt;}}
+</span></span></code></pre></div>
+
+<div class="swiper-box">
+  <div class="swiper-container gallery-swiper">
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide">
+          <img src="../../images/zweiter-post/bike2.jpg" alt="Galerie Bild" loading="lazy">
+        </div>
+      
+        <div class="swiper-slide">
+          <img src="../../images/zweiter-post/bike3.jpg" alt="Galerie Bild" loading="lazy">
+        </div>
+      
+        <div class="swiper-slide">
+          <img src="../../images/zweiter-post/bike4.jpg" alt="Galerie Bild" loading="lazy">
+        </div>
+      
+    </div>
+
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+<style>
+.swiper-box {
+  width: 100%;
+  position: relative;
+  
+  overflow: hidden;
+}
+
+.gallery-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-swiper .swiper-slide img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+  border-radius: 3px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #333;
+}
+</style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  new Swiper('.gallery-swiper', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    lazy: {
+      loadPrevNext: true
+    }
+  });
+});
+</script>
+
+<hr>
+<h2 id="übersichtsgalerie-masonrylightbox">Übersichtsgalerie (Masonry/Lightbox)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; gallery-overview images=&#34;/images/zweiter-post/bike1.jpg,/images/zweiter-post/bike2.jpg,/images/zweiter-post/bike3.jpg,/images/zweiter-post/bike4.jpg&#34; &gt;}}
+</span></span></code></pre></div>
+
+<div class="masonry-grid">
+  
+    <div class="grid-item">
+      <img src="../../images/zweiter-post/bike1.jpg" alt="Galerie Bild" loading="lazy">
+    </div>
+  
+    <div class="grid-item">
+      <img src="../../images/zweiter-post/bike2.jpg" alt="Galerie Bild" loading="lazy">
+    </div>
+  
+    <div class="grid-item">
+      <img src="../../images/zweiter-post/bike3.jpg" alt="Galerie Bild" loading="lazy">
+    </div>
+  
+    <div class="grid-item">
+      <img src="../../images/zweiter-post/bike4.jpg" alt="Galerie Bild" loading="lazy">
+    </div>
+  
+</div>
+
+<style>
+.masonry-grid {
+  width: 100%;
+}
+
+ 
+.grid-item {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 10px;  
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin: 0;  
+}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var grid = document.querySelector('.masonry-grid');
+  new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    percentPosition: true,
+    gutter: 10 
+  });
+});
+</script>
+
+<hr>
+<h2 id="hinweis-zur-bildanzeige">Hinweis zur Bildanzeige</h2>
+<p>Alle Bilder und Galerien sind automatisch mit einer <strong>Lightbox</strong> versehen – beim Anklicken öffnet sich das Bild groß im Overlay.<br>
+Das funktioniert sowohl für einzelne Bilder als auch für Swiper- und Übersichtsgalerien.</p>
+<hr>
+<h2 id="textformatierung">Textformatierung</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>**fett**  
+</span></span><span style="display:flex;"><span><span style="font-style:italic">*kursiv*</span>  
+</span></span><span style="display:flex;"><span><span style="font-style:italic">**</span>*fett + kursiv***  
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">`Code inline`</span>
+</span></span></code></pre></div><p><strong>fett</strong><br>
+<em>kursiv</em><br>
+<em><strong>fett + kursiv</strong></em><br>
+<code>Code inline</code></p>
+<h3 id="schriftarten-farben-und-größen-html-in-markdown">Schriftarten, Farben und Größen (HTML in Markdown)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>&lt;p style=&#34;color:blue; font-size:18px; font-family:Arial;&#34;&gt;
+</span></span><span style="display:flex;"><span>Dies ist ein farbiger Text in einer anderen Schriftart.
+</span></span><span style="display:flex;"><span>&lt;/p&gt;
+</span></span></code></pre></div><p style="color:blue; font-size:18px; font-family:Arial;">
+Dies ist ein farbiger Text in einer anderen Schriftart.
+</p>
+<hr>
+<h2 id="codeblöcke">Codeblöcke</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>    ``<span style="color:#e6db74">`python
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    strecke_km = 45
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    zeit_h = 2.5
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    durchschnitt = strecke_km / zeit_h
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    print(f&#34;Durchschnittsgeschwindigkeit: {durchschnitt:.1f} km/h&#34;)
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    `</span>``
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>strecke_km <span style="color:#f92672">=</span> <span style="color:#ae81ff">45</span>
+</span></span><span style="display:flex;"><span>zeit_h <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>durchschnitt <span style="color:#f92672">=</span> strecke_km <span style="color:#f92672">/</span> zeit_h
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Durchschnittsgeschwindigkeit: </span><span style="color:#e6db74">{</span>durchschnitt<span style="color:#e6db74">:</span><span style="color:#e6db74">.1f</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> km/h&#34;</span>)
+</span></span></code></pre></div><hr>
+<h2 id="zusammenfassung">Zusammenfassung</h2>
+<p>Mit Markdown und Hugo kannst du:</p>
+<ul>
+<li>Überschriften, Absätze und Listen erstellen</li>
+<li>Zitate einfügen</li>
+<li>Bilder mit Unterschriften darstellen</li>
+<li>Swiper- und Masonry-Galerien nutzen (Lightbox automatisch)</li>
+<li>Codeblöcke darstellen</li>
+<li>HTML für Schriftarten, Farben oder Größen einfügen</li>
+</ul>
+<hr>
+<h1 id="anleitung-eigenen-blog-mit-hugo-und-github-erstellen">Anleitung: Eigenen Blog mit Hugo und GitHub erstellen</h1>
+<p>Diese Anleitung zeigt dir Schritt für Schritt, wie du deinen Blog lokal bearbeitest und dann online stellst.<br>
+Du brauchst dafür <strong>GitHub</strong> (zum Speichern im Internet) und <strong>Hugo</strong> (um die Website zu bauen).</p>
+<hr>
+<h2 id="1-blog-von-github-herunterladen">1. Blog von GitHub herunterladen</h2>
+<ol>
+<li>Gehe auf die GitHub-Seite deines Blogs (z.B. <code>https://github.com/dein-nutzername/dein-blog</code>).</li>
+<li>Klicke auf den grünen Button <strong>Code</strong> → <strong>Download ZIP</strong>.</li>
+<li>Entpacke die ZIP-Datei an einem Ort auf deinem Computer, z.B. <code>Dokumente/blog</code>.</li>
+</ol>
+<hr>
+<h2 id="2-hugo-installieren">2. Hugo installieren</h2>
+<ul>
+<li><strong>Windows</strong>:
+<ol>
+<li>Gehe auf <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>.</li>
+<li>Lade die <code>.zip</code> Datei für Windows herunter (Extended-Version).</li>
+<li>Entpacke sie und lege die Datei <code>hugo.exe</code> in einen Ordner (z.B. <code>C:\hugo\</code>).</li>
+<li>Füge den Ordner zum <strong>PATH</strong> hinzu (falls das nicht klar ist: einfach die <code>hugo.exe</code> ins gleiche Verzeichnis legen wie dein Blog, dann funktioniert es auch).</li>
+</ol>
+</li>
+<li><strong>Mac</strong> (einfacher):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install hugo
+</span></span></code></pre></div></li>
+</ul>
+<hr>
+<h2 id="3-blog-lokal-starten">3. Blog lokal starten</h2>
+<ol>
+<li>Öffne ein Terminal (Windows: Eingabeaufforderung oder PowerShell, Mac: Terminal).</li>
+<li>Wechsle in deinen Blog-Ordner:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd Dokumente/blog
+</span></span></code></pre></div></li>
+<li>Starte den Hugo-Server:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -D
+</span></span></code></pre></div></li>
+<li>Öffne im Browser: <a href="http://localhost:1313">http://localhost:1313</a><br>
+→ Dort siehst du sofort eine Live-Vorschau deines Blogs.</li>
+</ol>
+<hr>
+<h2 id="4-bilder-hinzufügen">4. Bilder hinzufügen</h2>
+<ul>
+<li>Lege deine Bilder in den Ordner:
+<pre tabindex="0"><code>static/images/mein-post/
+</code></pre></li>
+<li>So fügst du ein Bild in deinem Blog ein:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Beschreibung des Bildes</span>](<span style="color:#a6e22e">/images/mein-post/foto.jpg</span>)
+</span></span></code></pre></div></li>
+</ul>
+<hr>
+<h2 id="5-einen-neuen-blogpost-erstellen">5. Einen neuen Blogpost erstellen</h2>
+<ol>
+<li>Im Ordner <code>content/posts/</code> eine neue Datei anlegen, z.B. <code>mein-post.md</code>.</li>
+<li>Schreibe oben in die Datei:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Mein erster Blogpost&#34;
+</span></span><span style="display:flex;"><span>date: 2025-08-31
+</span></span><span style="display:flex;"><span>draft: false
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div></li>
+<li>Darunter deinen Text in <strong>Markdown</strong> schreiben:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#75715e">## Überschrift
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>Das ist ein Absatz.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">Ein schönes Zitat.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>
+</span></span><span style="display:flex;"><span>![<span style="color:#f92672">Mein Bild</span>](<span style="color:#a6e22e">/images/mein-post/foto.jpg</span>)
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="6-vorschau-ansehen">6. Vorschau ansehen</h2>
+<ul>
+<li>Speichere die Datei.</li>
+<li>Gehe im Browser zurück auf <a href="http://localhost:1313">http://localhost:1313</a>.</li>
+<li>Dort siehst du sofort deinen Beitrag mit Bildern und Text.</li>
+</ul>
+<hr>
+<h2 id="7-blog-online-stellen-manuell">7. Blog online stellen (manuell)</h2>
+<ol>
+<li>
+<p>Wenn alles passt, musst du den Blog wieder auf GitHub hochladen.</p>
+<p><strong>Schritt A: Seite bauen</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo -D
+</span></span></code></pre></div><p>→ Hugo erstellt die fertige Website im Ordner <code>public/</code>.</p>
+<p><strong>Schritt B: Alles auf GitHub hochladen</strong></p>
+<ul>
+<li>Öffne GitHub in deinem Browser und gehe zu deinem Repository (z.B. <code>dein-nutzername/dein-blog</code>).</li>
+<li>Klicke auf <strong>Add file</strong> → <strong>Upload files</strong>.</li>
+<li>Lade <strong>den kompletten Ordner</strong> hoch, also:
+<ul>
+<li>den <code>public/</code> Ordner (fertige Website für online)</li>
+<li>den <code>content/</code> Ordner (deine Blogposts als Markdown)</li>
+<li>den <code>static/</code> Ordner (deine Bilder)</li>
+</ul>
+</li>
+</ul>
+<p>So bleibt alles an einem Ort und du kannst später neue Beiträge hinzufügen, ohne dass alte verloren gehen.</p>
+</li>
+<li>
+<p>Klicke auf <strong>Commit changes</strong>.</p>
+</li>
+<li>
+<p>Fertig!</p>
+<ul>
+<li>Die fertige Seite wird online angezeigt unter<br>
+<code>https://dein-nutzername.github.io/</code></li>
+<li>Deine Arbeitsdateien (Posts, Bilder) sind sicher auf GitHub gespeichert.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p>👉 <strong>Kurz gesagt für Anfänger</strong>:</p>
+<ul>
+<li>ZIP von GitHub runterladen</li>
+<li>Hugo installieren</li>
+<li><code>hugo server -D</code> starten und Vorschau öffnen</li>
+<li>Bilder in <code>static/images/...</code> speichern</li>
+<li>Neue <code>.md</code> Datei in <code>content/posts/</code> erstellen und Text schreiben</li>
+<li>Mit <code>hugo -D</code> bauen</li>
+<li>Inhalt aus <code>public/</code> auf GitHub hochladen</li>
+</ul>
+
+    </div>
+  </section>
+
+  
+  <section class="container">
+    <div class="two-boxes">
+      
+        <div class="box">
+          <div style="font-size: 2rem; margin-bottom: 1rem; text-align: left;">&#8592;</div>
+          <h2 class="post-title">Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</h2>
+          
+            <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
+          
+          <a href="../../posts/erster-post/" class="more-link">
+            <span class="more-text">Weiterlesen</span>
+          </a>
+        </div>
+      
+
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Uli Kohl · Impressum · Datenschutz</p>
+  </footer>
+
+  
+  <script src="../../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      
+      document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
+        new Swiper(swiperEl, {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 10,
+          pagination: {
+            el: swiperEl.querySelector('.swiper-pagination'),
+            clickable: true
+          },
+          navigation: {
+            nextEl: swiperEl.querySelector('.swiper-button-next'),
+            prevEl: swiperEl.querySelector('.swiper-button-prev')
+          },
+          lazy: { loadPrevNext: true }
+        });
+      });
+
+      
+      document.querySelectorAll('.box img').forEach(img => {
+        if (!img.parentElement.matches('a')) {
+          const link = document.createElement('a');
+          link.href = img.src;
+          link.className = 'glightbox';
+          img.parentNode.insertBefore(link, img);
+          link.appendChild(img);
+        }
+      });
+
+      
+      GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true
+      });
+
+    });
+  </script>
+
+</body>
+</html>

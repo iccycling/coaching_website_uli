@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mein zweiter Post – Kaida</title>
@@ -15,16 +15,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+  
   <link rel="stylesheet" href="../../css/main.css">
 
   <style>
-  
     .box img {
-      max-width: 80%;
-      max-height: 80%;
+      width: 100%;
+      height: auto;
       display: block;
       margin: 1rem auto;
     }
+
     .box blockquote {
       border-left: 4px solid #ccc;
       padding-left: 1rem;
@@ -69,13 +78,13 @@ Herzlich willkommen auf meinem Blog!</p>
     </div>
   </section>
 
-    
+  
   <section class="container">
     <div class="two-boxes">
       
         <div class="box">
-          
-          <h2 class="post-title">← Mein erster Blogpost</h2>
+          <div style="font-size: 2rem; margin-bottom: 1rem; text-align: left;">&#8592;</div>
+          <h2 class="post-title">Mein erster Blogpost</h2>
           
             <p class="post-summary"><p>Hallo Welt!</p>
 <p>Das ist ein Test des Decap CMS Previews.</p></p>
@@ -88,8 +97,8 @@ Herzlich willkommen auf meinem Blog!</p>
 
       
         <div class="box">
-          
-          <h2 class="post-title">Mein 3. Post →</h2>
+          <div style="font-size: 2rem; margin-bottom: 1rem; text-align: right;">&#8594;</div>
+          <h2 class="post-title">Mein 3. Post</h2>
           
             <p class="post-summary"><p>Das ist der Inhalt meines ersten Blogposts.<br>
 Herzlich willkommen auf meinem Blog!</p></p>
@@ -102,11 +111,56 @@ Herzlich willkommen auf meinem Blog!</p></p>
     </div>
   </section>
 
-
   <footer>
     <p>© 2025 Uli Kohl · Impressum · Datenschutz</p>
   </footer>
 
+  
   <script src="../../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      
+      document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
+        new Swiper(swiperEl, {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 10,
+          pagination: {
+            el: swiperEl.querySelector('.swiper-pagination'),
+            clickable: true
+          },
+          navigation: {
+            nextEl: swiperEl.querySelector('.swiper-button-next'),
+            prevEl: swiperEl.querySelector('.swiper-button-prev')
+          },
+          lazy: { loadPrevNext: true }
+        });
+      });
+
+      
+      document.querySelectorAll('.box img').forEach(img => {
+        if (!img.parentElement.matches('a')) {
+          const link = document.createElement('a');
+          link.href = img.src;
+          link.className = 'glightbox';
+          img.parentNode.insertBefore(link, img);
+          link.appendChild(img);
+        }
+      });
+
+      
+      GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true
+      });
+
+    });
+  </script>
+
 </body>
 </html>

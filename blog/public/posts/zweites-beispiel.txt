@@ -1,0 +1,59 @@
+---
+title: "Zweiter Blogpost: Inspiration auf zwei Rädern"
+date: 2025-09-01
+draft: false
+featured_image: "/images/zweiter-post/bike1.jpg"
+summary: "Ein Beispielpost rund um das Thema Radfahren – mit Fotos, Tipps, Zitaten und einem kleinen Code-Schnipsel."
+---
+
+Dieser Beitrag zeigt, wie du Markdown und HTML kombinieren kannst, um spannende Inhalte zu erstellen – diesmal am Beispiel **Radfahren**.
+
+---
+
+## Warum Radfahren?
+
+Radfahren ist nicht nur gesund, sondern auch ein tolles Mittel, die Welt zu erkunden.  
+Es schont die Umwelt, hält fit und macht Spaß – egal ob auf der Straße, im Wald oder im Gebirge.
+
+---
+
+## Bilder mit kurzer Erklärung
+
+![Mountainbike im Wald](/images/zweiter-post/bike1.jpg)  
+*Ein Mountainbike auf einem schmalen Waldpfad.*
+
+---
+
+## Zwei Eindrücke nebeneinander
+
+<div style="display: flex; gap: 1rem; justify-content: center;">
+  <figure style="flex:1; text-align:center;">
+    <img src="/images/zweiter-post/bike2.jpg" alt="Straßenfahrt" style="max-width:100%;">
+    <figcaption style="font-size:0.9rem; color:#555;">Straße: Lange Ausfahrten</figcaption>
+  </figure>
+  <figure style="flex:1; text-align:center;">
+    <img src="/images/zweiter-post/bike3.jpg" alt="Trailfahrt" style="max-width:100%;">
+    <figcaption style="font-size:0.9rem; color:#555;">Offroad: Spaß im Gelände</figcaption>
+  </figure>
+</div>
+
+---
+
+## Zitat
+
+> "Nothing compares to the simple pleasure of a bike ride."  
+> — John F. Kennedy
+
+---
+
+## Kleiner Code-Tipp
+
+Du kannst auch Code im Blog darstellen.  
+Hier ein Beispiel für eine einfache Berechnung von Durchschnittsgeschwindigkeit:
+
+```python
+strecke_km = 45
+zeit_h = 2.5
+
+durchschnitt = strecke_km / zeit_h
+print(f"Durchschnittsgeschwindigkeit: {durchschnitt:.1f} km/h")

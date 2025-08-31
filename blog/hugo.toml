@@ -12,3 +12,8 @@ canonifyURLs = false  # optional, sorgt dafür, dass Hugo keine absolute URL erz
   disableAliases = true
   pagerSize = 6
   path = "page"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
