@@ -4,6 +4,8 @@ date: 2025-08-30
 draft: false
 featured_image: "/images/erster-post/foto1.jpg"
 summary: "Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht."
+author: "Max Mustermann"
+tags: ["Test"]
 ---
 
 

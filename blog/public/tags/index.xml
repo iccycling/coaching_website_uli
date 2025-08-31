@@ -16,17 +16,10 @@
       <description></description>
     </item>
     <item>
-      <title>Blog</title>
-      <link>//localhost:1313/tags/blog/</link>
+      <title>Test</title>
+      <link>//localhost:1313/tags/test/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/blog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tutorial</title>
-      <link>//localhost:1313/tags/tutorial/</link>
-      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/tutorial/</guid>
+      <guid>//localhost:1313/tags/test/</guid>
       <description></description>
     </item>
   </channel>

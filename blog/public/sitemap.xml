@@ -11,16 +11,13 @@
     <loc>//localhost:1313/posts/zweites-beispiel/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/blog/</loc>
-    <lastmod>2025-08-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/posts/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/tutorial/</loc>
+    <loc>//localhost:1313/tags/test/</loc>
     <lastmod>2025-08-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/erster-post/</loc>
