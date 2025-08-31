@@ -5,7 +5,8 @@ author: "Frederik Beck"
 draft: false
 featured_image: "/images/zweiter-post/bike1.jpg"
 summary: "Ein Tutorial-Beitrag, wie man einen Blogpost erstellt, Bilder, Galerien, Zitate, Überschriften und Code einfügt."
-tags: ["Test", "Beispiel"]
+
+tags: ["Tutorial", "Blog"]
 ---
 
 
@@ -245,11 +246,11 @@ Du brauchst dafür **GitHub** (zum Speichern im Internet) und **Hugo** (um die W
    **Schritt B: Alles auf GitHub hochladen**
    - Öffne GitHub in deinem Browser und gehe zu deinem Repository (z.B. `dein-nutzername/dein-blog`).
    - Klicke auf **Add file** → **Upload files**.
-   - Lade **die kompletten Ordner** hoch, also:
+   - Lade **den kompletten Ordner** hoch, also:
      - den `public/` Ordner (fertige Website für online)  
      - den `content/` Ordner (deine Blogposts als Markdown)  
      - den `static/` Ordner (deine Bilder)  
-     - alternativ kannst du einfach den kompletten Blog Ordner hochladen.
+      
 
    So bleibt alles an einem Ort und du kannst später neue Beiträge hinzufügen, ohne dass alte verloren gehen.
 
@@ -269,5 +270,5 @@ Du brauchst dafür **GitHub** (zum Speichern im Internet) und **Hugo** (um die W
 - Bilder in `static/images/...` speichern  
 - Neue `.md` Datei in `content/posts/` erstellen und Text schreiben  
 - Mit `hugo -D` bauen  
-- Inhalt aus `public/`, `static/`, `content/` auf GitHub hochladen  
+- Inhalt aus `public/` auf GitHub hochladen  
 
