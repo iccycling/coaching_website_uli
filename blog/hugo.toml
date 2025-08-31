@@ -17,3 +17,6 @@ canonifyURLs = false  # optional, sorgt dafür, dass Hugo keine absolute URL erz
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[taxonomies]
+  tag = "tags"

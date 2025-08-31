@@ -49,6 +49,36 @@
       object-fit: cover;
       margin-bottom: 1rem;
     }
+
+.post-tags {
+  font-size: 0.75rem;   
+  margin-bottom: 0.5rem;
+}
+
+.post-tags a {
+  display: inline-block;
+  background-color: #f0f0f0;  
+  color: #555;
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  border-radius: 3px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.post-tags a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.post-meta {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
   </style>
 </head>
 
@@ -70,9 +100,19 @@
 
   
   <section class="container">
-    <div class="box">
-      <h1>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</h1>
-      <p>Dies ist ein kompakter Beispielpost für unseren Blog.<br>
+  <div class="box">
+    
+   
+
+    <h1>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</h1>
+
+    
+    <p class="post-meta">
+      
+      30.08.2025
+    </p>
+
+    <p>Dies ist ein kompakter Beispielpost für unseren Blog.<br>
 Du kannst Titel, Bilder, Code und Zitate direkt einfügen.</p>
 <h2 id="textbeispiel">Textbeispiel</h2>
 <p>Hier kannst du normalen Text schreiben. Markdown funktioniert direkt.</p>
@@ -82,8 +122,9 @@ Du kannst Titel, Bilder, Code und Zitate direkt einfügen.</p>
 <h2 id="code-beispiel">Code-Beispiel</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hallo Welt&#34;</span>)
 </span></span></code></pre></div>
-    </div>
-  </section>
+  </div>
+</section>
+
 
   
   <section class="container">

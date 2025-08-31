@@ -1,9 +1,11 @@
 ---
 title: "Beispiel Blog: So erstellst du einen Blogpost"
 date: 2025-08-31
+author: "Frederik Beck"
 draft: false
 featured_image: "/images/zweiter-post/bike1.jpg"
 summary: "Ein Tutorial-Beitrag, wie man einen Blogpost erstellt, Bilder, Galerien, Zitate, Überschriften und Code einfügt."
+tags: ["Tutorial", "Blog", "Beispiel"]
 ---
 
 
