@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mein 3. Post – Kaida</title>
@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 
   
@@ -160,6 +161,42 @@ Herzlich willkommen auf meinem Blog!</p></p>
       });
 
     });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var grid = document.querySelector('.masonry-grid');
+  if (!grid) return;
+
+ 
+
+var grid = document.querySelector('.masonry-grid');
+var msnry = new Masonry(grid, {
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  gutter: 10
+});
+
+imagesLoaded(grid).on('progress', function() {
+  msnry.layout();
+});
+
+window.addEventListener('resize', function() {
+  msnry.layout();
+});
+
+imagesLoaded(grid, function() {
+  msnry.layout();
+});
+
+  
+  function layoutMasonry() {
+    msnry.layout();
+  }
+
+setTimeout(function() { msnry.layout(); }, 1000);
+imagesLoaded(grid, function() { msnry.layout(); });
+});
   </script>
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beispiel Blog: So erstellst du einen Blogpost – Kaida</title>
@@ -20,7 +20,7 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 
 
   
@@ -185,65 +185,6 @@ document.addEventListener('DOMContentLoaded', function(){
     lazy: {
       loadPrevNext: true
     }
-  });
-});
-</script>
-
-<hr>
-<h2 id="übersichtsgalerie-masonrylightbox">Übersichtsgalerie (Masonry/Lightbox)</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; gallery-overview images=&#34;/images/zweiter-post/bike1.jpg,/images/zweiter-post/bike2.jpg,/images/zweiter-post/bike3.jpg,/images/zweiter-post/bike4.jpg&#34; &gt;}}
-</span></span></code></pre></div>
-
-<div class="masonry-grid">
-  
-    <div class="grid-item">
-      <img src="../../images/zweiter-post/bike1.jpg" alt="Galerie Bild" loading="lazy">
-    </div>
-  
-    <div class="grid-item">
-      <img src="../../images/zweiter-post/bike2.jpg" alt="Galerie Bild" loading="lazy">
-    </div>
-  
-    <div class="grid-item">
-      <img src="../../images/zweiter-post/bike3.jpg" alt="Galerie Bild" loading="lazy">
-    </div>
-  
-    <div class="grid-item">
-      <img src="../../images/zweiter-post/bike4.jpg" alt="Galerie Bild" loading="lazy">
-    </div>
-  
-</div>
-
-<style>
-.masonry-grid {
-  width: 100%;
-}
-
- 
-.grid-item {
-  width: 100%;
-  max-width: 250px;
-  margin-bottom: 10px;  
-}
-
-.grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  margin: 0;  
-}
-</style>
-
-<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var grid = document.querySelector('.masonry-grid');
-  new Masonry(grid, {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
-    percentPosition: true,
-    gutter: 10 
   });
 });
 </script>
@@ -489,7 +430,10 @@ Du brauchst dafür <strong>GitHub</strong> (zum Speichern im Internet) und <stro
       });
 
     });
-  </script>
+
+</script>
+
+
 
 </body>
 </html>

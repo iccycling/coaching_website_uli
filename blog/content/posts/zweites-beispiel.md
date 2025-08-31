@@ -73,15 +73,7 @@ Mehrere Bilder in einer **Swiper-Galerie**:
 
 {{< gallery-swipe images="/images/zweiter-post/bike2.jpg,/images/zweiter-post/bike3.jpg,/images/zweiter-post/bike4.jpg" >}}
 
----
 
-## Übersichtsgalerie (Masonry/Lightbox)
-
-```markdown
-{{</* gallery-overview images="/images/zweiter-post/bike1.jpg,/images/zweiter-post/bike2.jpg,/images/zweiter-post/bike3.jpg,/images/zweiter-post/bike4.jpg" */>}}
-```
-
-{{< gallery-overview images="/images/zweiter-post/bike1.jpg,/images/zweiter-post/bike2.jpg,/images/zweiter-post/bike3.jpg,/images/zweiter-post/bike4.jpg" >}}
 
 ---
 ## Hinweis zur Bildanzeige
