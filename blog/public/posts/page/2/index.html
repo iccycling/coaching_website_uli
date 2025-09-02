@@ -10,13 +10,22 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <style>
+.box {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+ 
+}
+
     .post-tags {
       font-size: 0.75rem;
        
       margin-bottom: 0.5rem;
     }
 
-    .post-tags a {
+    .post-tags a,
+    .post-tags .tag {
       display: inline-block;
       background-color: #f0f0f0;
        
@@ -34,6 +43,8 @@
       color: #fff;
     }
 
+
+    
     
   </style>
 </head>
@@ -62,56 +73,46 @@
   
 
   <div class="two-boxes">
-    
-    <div class="box">
+  
+    <a href="../../../posts/test-post/" class="box">
       
 
       
-      <p class="post-tags">
-        
-        <a href="../../../tags/test">Test</a>
-
-        
-      </p>
       
-
+        <p class="post-tags">
+          
+            <span class="tag">Test</span>
+          
+        </p>
+      
 
       <h2 class="post-title">1. Post</h2>
 
       
-      <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
+        <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
       
-
-      <a href="../../../posts/test-post/" class="more-link">
-        <span class="more-text">Weiterlesen</span>
-      </a>
-    </div>
-    
-    <div class="box">
+    </a>
+  
+    <a href="../../../posts/nulter-post/" class="box">
       
 
       
-      <p class="post-tags">
-        
-        <a href="../../../tags/test">Test</a>
-
-        
-      </p>
       
-
+        <p class="post-tags">
+          
+            <span class="tag">Test</span>
+          
+        </p>
+      
 
       <h2 class="post-title">0. Post</h2>
 
       
-      <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
+        <p class="post-summary">Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
       
-
-      <a href="../../../posts/nulter-post/" class="more-link">
-        <span class="more-text">Weiterlesen</span>
-      </a>
-    </div>
-    
-  </div>
+    </a>
+  
+</div>
 
   
   <div class="pagination">

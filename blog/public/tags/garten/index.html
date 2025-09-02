@@ -10,13 +10,22 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <style>
+.box {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+ 
+}
+
     .post-tags {
       font-size: 0.75rem;
        
       margin-bottom: 0.5rem;
     }
 
-    .post-tags a {
+    .post-tags a,
+    .post-tags .tag {
       display: inline-block;
       background-color: #f0f0f0;
        
@@ -34,6 +43,8 @@
       color: #fff;
     }
 
+
+    
     
   </style>
 </head>
@@ -63,25 +74,32 @@
 
   
 
-  <div class="two-boxes">
-    
-      <div class="box">
-        
-          <img src="../../images/permaculture-post/perm1.jpg" alt="Preview Image" class="preview-img">
-        
+ <div class="two-boxes">
+  
+    <a href="../../posts/permakultur-post/" class="box">
+      
+        <img src="../../images/permaculture-post/perm1.jpg" alt="Preview Image" class="preview-img">
+      
 
-        <h2 class="post-title">Permakultur: Nachhaltig Gärtnern für die Zukunft</h2>
+      
+      
+        <p class="post-tags">
+          
+            <span class="tag">Permakultur</span>
+          
+            <span class="tag">Garten</span>
+          
+        </p>
+      
 
-        
-          <p class="post-summary">Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann.</p>
-        
+      <h2 class="post-title">Permakultur: Nachhaltig Gärtnern für die Zukunft</h2>
 
-        <a href="../../posts/permakultur-post/" class="more-link">
-          <span class="more-text">Weiterlesen</span>
-        </a>
-      </div>
-    
-  </div>
+      
+        <p class="post-summary">Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann.</p>
+      
+    </a>
+  
+</div>
 
   
   <div class="pagination">

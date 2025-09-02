@@ -217,7 +217,7 @@
       border-radius: 9px;
       box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
       padding: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 0rem;
       /* vertikaler Abstand zu allen nachfolgenden Elementen */
       max-width: 100%;
       /*opacity: 0;
@@ -278,7 +278,7 @@
     @media (max-width: 900px) {
       .two-boxes {
         flex-direction: column;
-        gap: 0;
+        gap: 2;
         /* vertikaler Abstand übernimmt margin-bottom der Boxen */
       }
 

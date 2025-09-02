@@ -10,13 +10,22 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <style>
+.box {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+ 
+}
+
     .post-tags {
       font-size: 0.75rem;
        
       margin-bottom: 0.5rem;
     }
 
-    .post-tags a {
+    .post-tags a,
+    .post-tags .tag {
       display: inline-block;
       background-color: #f0f0f0;
        
@@ -34,6 +43,8 @@
       color: #fff;
     }
 
+
+    
     
   </style>
 </head>
@@ -63,25 +74,32 @@
 
   
 
-  <div class="two-boxes">
-    
-      <div class="box">
-        
-          <img src="../../images/zweiter-post/bike1.jpg" alt="Preview Image" class="preview-img">
-        
+ <div class="two-boxes">
+  
+    <a href="../../posts/zweites-beispiel/" class="box">
+      
+        <img src="../../images/zweiter-post/bike1.jpg" alt="Preview Image" class="preview-img">
+      
 
-        <h2 class="post-title">Beispiel Blog: So erstellst du einen Blogpost</h2>
+      
+      
+        <p class="post-tags">
+          
+            <span class="tag">Tutorial</span>
+          
+            <span class="tag">Blog</span>
+          
+        </p>
+      
 
-        
-          <p class="post-summary">Ein Tutorial-Beitrag, wie man einen Blogpost erstellt, Bilder, Galerien, Zitate, Überschriften und Code einfügt.</p>
-        
+      <h2 class="post-title">Beispiel Blog: So erstellst du einen Blogpost</h2>
 
-        <a href="../../posts/zweites-beispiel/" class="more-link">
-          <span class="more-text">Weiterlesen</span>
-        </a>
-      </div>
-    
-  </div>
+      
+        <p class="post-summary">Ein Tutorial-Beitrag, wie man einen Blogpost erstellt, Bilder, Galerien, Zitate, Überschriften und Code einfügt.</p>
+      
+    </a>
+  
+</div>
 
   
   <div class="pagination">
