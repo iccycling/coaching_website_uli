@@ -264,8 +264,8 @@
     .two-boxes {
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
-      /* horizontaler und vertikaler Abstand zwischen den Boxen */
+      column-gap: 2rem; /* horizontaler Abstand */
+  row-gap: 0;       /* vertikaler Abstand */
     }
 
     .two-boxes .box {
@@ -277,7 +277,7 @@
     @media (max-width: 900px) {
       .two-boxes {
         flex-direction: column;
-        gap: 0;
+       
         /* vertikaler Abstand übernimmt margin-bottom der Boxen */
       }
 
