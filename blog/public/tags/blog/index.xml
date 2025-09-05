@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Coaching Blog</title>
-    <link>http://localhost:1313/coaching_website_uli/blog/public/tags/blog/</link>
+    <link>https://iccycling.github.io/coaching_website_uli/blog/public/tags/blog/</link>
     <description>Recent content in Blog on Coaching Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/coaching_website_uli/blog/public/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://iccycling.github.io/coaching_website_uli/blog/public/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beispiel Blog: So erstellst du einen Blogpost</title>
-      <link>http://localhost:1313/coaching_website_uli/blog/public/posts/zweites-beispiel/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/zweites-beispiel/</link>
       <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/coaching_website_uli/blog/public/posts/zweites-beispiel/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/zweites-beispiel/</guid>
       <description>Ein Tutorial-Beitrag, wie man einen Blogpost erstellt, Bilder, Galerien, Zitate, Überschriften und Code einfügt.</description>
     </item>
   </channel>
