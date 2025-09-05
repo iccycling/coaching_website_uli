@@ -20,7 +20,18 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+  
+  <meta property="og:title" content="0. Post">
+  <meta property="og:description" content="Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="//localhost:1313/posts/nulter-post/">
+  
 
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="0. Post">
+  <meta name="twitter:description" content="Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.">
+  
 
 
   
@@ -94,6 +105,57 @@ ul, ol {
     
 }
 
+.share-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 1rem;
+}
+
+.share-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.share-buttons a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.share-buttons i {
+  font-size: 1rem;
+}
+
+@media print {
+  body * {
+    visibility: hidden;   
+  }
+
+  .box, .box * {
+    visibility: visible;   
+  }
+
+  .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+   
+  .share-buttons {
+    display: none;
+  }
+}
 
   </style>
 </head>
@@ -135,6 +197,25 @@ ul, ol {
     </p>
 
     <p>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</p>
+
+
+<div class="share-buttons">
+  <a href="https://x.com/intent/tweet?url=%2f%2flocalhost%3a1313%2fposts%2fnulter-post%2f&text=0.%20Post" target="_blank" rel="noopener noreferrer" title="Auf X teilen">
+    <i class="fa-brands fa-x"></i>
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2fnulter-post%2f" target="_blank" rel="noopener noreferrer" title="Auf Facebook teilen">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=%2f%2flocalhost%3a1313%2fposts%2fnulter-post%2f" target="_blank" rel="noopener noreferrer" title="Auf LinkedIn teilen">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="mailto:?subject=0.&#43;Post&body=%2f%2flocalhost%3a1313%2fposts%2fnulter-post%2f" target="_blank" rel="noopener noreferrer" title="Per E-Mail teilen">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="javascript:window.print()" title="Drucken">
+    <i class="fas fa-print"></i>
+  </a>
+</div>
 
   </div>
 </section>
@@ -209,6 +290,8 @@ ul, ol {
       });
 
     });
+
+   
 
 </script>
 

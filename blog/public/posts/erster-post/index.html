@@ -20,7 +20,22 @@
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
+  
+  <meta property="og:title" content="Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten">
+  <meta property="og:description" content="Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="//localhost:1313/posts/erster-post/">
+  
+  <meta property="og:image" content="/images/erster-post/foto1.jpg">
+  
 
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten">
+  <meta name="twitter:description" content="Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.">
+  
+  <meta name="twitter:image" content="/images/erster-post/foto1.jpg">
+  
 
 
   
@@ -94,6 +109,57 @@ ul, ol {
     
 }
 
+.share-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 1rem;
+}
+
+.share-buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.share-buttons a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.share-buttons i {
+  font-size: 1rem;
+}
+
+@media print {
+  body * {
+    visibility: hidden;   
+  }
+
+  .box, .box * {
+    visibility: visible;   
+  }
+
+  .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+   
+  .share-buttons {
+    display: none;
+  }
+}
 
   </style>
 </head>
@@ -144,6 +210,25 @@ Du kannst Titel, Bilder, Code und Zitate direkt einfügen.</p>
 <h2 id="code-beispiel">Code-Beispiel</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hallo Welt&#34;</span>)
 </span></span></code></pre></div>
+
+<div class="share-buttons">
+  <a href="https://x.com/intent/tweet?url=%2f%2flocalhost%3a1313%2fposts%2ferster-post%2f&text=Erster%20Blogpost%3a%20Kompakter%20Einstieg%20mit%20Text%2c%20Bildern%2c%20Code%20und%20Zitaten" target="_blank" rel="noopener noreferrer" title="Auf X teilen">
+    <i class="fa-brands fa-x"></i>
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2ferster-post%2f" target="_blank" rel="noopener noreferrer" title="Auf Facebook teilen">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=%2f%2flocalhost%3a1313%2fposts%2ferster-post%2f" target="_blank" rel="noopener noreferrer" title="Auf LinkedIn teilen">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="mailto:?subject=Erster&#43;Blogpost%3A&#43;Kompakter&#43;Einstieg&#43;mit&#43;Text%2C&#43;Bildern%2C&#43;Code&#43;und&#43;Zitaten&body=%2f%2flocalhost%3a1313%2fposts%2ferster-post%2f" target="_blank" rel="noopener noreferrer" title="Per E-Mail teilen">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="javascript:window.print()" title="Drucken">
+    <i class="fas fa-print"></i>
+  </a>
+</div>
+
   </div>
 </section>
 
@@ -228,6 +313,8 @@ Du kannst Titel, Bilder, Code und Zitate direkt einfügen.</p>
       });
 
     });
+
+   
 
 </script>
 
