@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Coaching Blog</title>
-    <link>/posts/</link>
+    <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/</link>
     <description>Recent content in Posts on Coaching Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://iccycling.github.io/coaching_website_uli/blog/public/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Permakultur: Nachhaltig Gärtnern für die Zukunft</title>
-      <link>/posts/permakultur-post/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/permakultur-post/</link>
       <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/permakultur-post/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/permakultur-post/</guid>
       <description>Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann.</description>
     </item>
     <item>
       <title>Beispiel Blog: So erstellst du einen Blogpost</title>
-      <link>/posts/zweites-beispiel/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/zweites-beispiel/</link>
       <pubDate>Sat, 30 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/zweites-beispiel/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/zweites-beispiel/</guid>
       <description>Ein Tutorial-Beitrag, wie man einen Blogpost erstellt, Bilder, Galerien, Zitate, Überschriften und Code einfügt.</description>
     </item>
     <item>
       <title>Erster Blogpost: Kompakter Einstieg mit Text, Bildern, Code und Zitaten</title>
-      <link>/posts/erster-post/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/erster-post/</link>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/erster-post/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/erster-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>4. Post</title>
-      <link>/posts/vierter-post/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/vierter-post/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/vierter-post/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/vierter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>3. Post</title>
-      <link>/posts/dritter-post/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/dritter-post/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/dritter-post/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/dritter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>2. Post</title>
-      <link>/posts/zweiter-post/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/zweiter-post/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/zweiter-post/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/zweiter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>1. Post</title>
-      <link>/posts/test-post/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/test-post/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/posts/test-post/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/test-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
     <item>
       <title>0. Post</title>
-      <link>/posts/nulter-post/</link>
+      <link>https://iccycling.github.io/coaching_website_uli/blog/public/posts/nulter-post/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/posts/nulter-post/</guid>
+      <guid>https://iccycling.github.io/coaching_website_uli/blog/public/posts/nulter-post/</guid>
       <description>Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.</description>
     </item>
   </channel>
