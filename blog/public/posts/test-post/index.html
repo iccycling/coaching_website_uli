@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1. Post – Kaida</title>
@@ -24,7 +24,7 @@
   <meta property="og:title" content="1. Post">
   <meta property="og:description" content="Ein kompakter Beispielpost für unseren Blog mit Text, Bildern, Code und Zitaten. Ein kurzer Einstieg, der direkt neugierig macht.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="//localhost:1313/posts/test-post/">
+  <meta property="og:url" content="/posts/test-post/">
   
 
   
@@ -135,27 +135,7 @@ ul, ol {
   font-size: 1rem;
 }
 
-@media print {
-  body * {
-    visibility: hidden;   
-  }
 
-  .box, .box * {
-    visibility: visible;   
-  }
-
-  .box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-   
-  .share-buttons {
-    display: none;
-  }
-}
 
   </style>
 </head>
@@ -200,20 +180,24 @@ ul, ol {
 
 
 <div class="share-buttons">
-  <a href="https://x.com/intent/tweet?url=%2f%2flocalhost%3a1313%2fposts%2ftest-post%2f&text=1.%20Post" target="_blank" rel="noopener noreferrer" title="Auf X teilen">
+  <a href="https://x.com/intent/tweet?url=%2fposts%2ftest-post%2f&text=1.%20Post" target="_blank" rel="noopener noreferrer" title="Auf X teilen">
     <i class="fa-brands fa-x"></i>
   </a>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2f%2flocalhost%3a1313%2fposts%2ftest-post%2f" target="_blank" rel="noopener noreferrer" title="Auf Facebook teilen">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=%2fposts%2ftest-post%2f" target="_blank" rel="noopener noreferrer" title="Auf Facebook teilen">
     <i class="fab fa-facebook-f"></i>
   </a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=%2f%2flocalhost%3a1313%2fposts%2ftest-post%2f" target="_blank" rel="noopener noreferrer" title="Auf LinkedIn teilen">
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=%2fposts%2ftest-post%2f" target="_blank" rel="noopener noreferrer" title="Auf LinkedIn teilen">
     <i class="fab fa-linkedin-in"></i>
   </a>
-  <a href="mailto:?subject=1.&#43;Post&body=%2f%2flocalhost%3a1313%2fposts%2ftest-post%2f" target="_blank" rel="noopener noreferrer" title="Per E-Mail teilen">
+ 
+  <a href="https://wa.me/?text=1.&#43;Post%20%2fposts%2ftest-post%2f" target="_blank" rel="noopener noreferrer" title="Auf WhatsApp teilen">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="mailto:?subject=1.&#43;Post&body=%2fposts%2ftest-post%2f" target="_blank" rel="noopener noreferrer" title="Per E-Mail teilen">
     <i class="fas fa-envelope"></i>
   </a>
-  <a href="javascript:window.print()" title="Drucken">
-    <i class="fas fa-print"></i>
+  <a href="javascript:void(0)" onclick="navigator.clipboard.writeText('\/posts\/test-post\/').then(()=>alert('Link kopiert!'));" title="Link kopieren">
+    <i class="fas fa-link"></i>
   </a>
 </div>
 
