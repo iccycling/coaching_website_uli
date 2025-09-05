@@ -3,7 +3,7 @@ title: "Permakultur: Nachhaltig Gärtnern für die Zukunft"
 date: 2025-08-31
 author: "Frederik Beck"
 draft: false
-featured_image: "/images/permaculture-post/perm1.jpg"
+featured_image: "images/permaculture-post/perm1.jpg"
 summary: "Ein ausführlicher Einblick in die Prinzipien der Permakultur und wie man sie im eigenen Garten umsetzen kann."
 tags: ["Permakultur", "Garten"]
 ---
