@@ -143,7 +143,22 @@ ul, ol {
   font-size: 1rem;
 }
 
+ 
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent);
+  transition: color 0.2s;
+}
 
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--accent-hover);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent);
+  opacity: 1;
+}
 
   </style>
 </head>
@@ -261,50 +276,45 @@ Du kannst Titel, Bilder, Code und Zitate direkt einfügen.</p>
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
 
-      
-      document.querySelectorAll('.gallery-swiper').forEach(swiperEl => {
-        new Swiper(swiperEl, {
-          slidesPerView: 1,
-          loop: true,
-          spaceBetween: 10,
-          pagination: {
-            el: swiperEl.querySelector('.swiper-pagination'),
-            clickable: true
-          },
-          navigation: {
-            nextEl: swiperEl.querySelector('.swiper-button-next'),
-            prevEl: swiperEl.querySelector('.swiper-button-prev')
-          },
-          lazy: { loadPrevNext: true }
-        });
-      });
 
-      
-      document.querySelectorAll('.box img').forEach(img => {
-        if (!img.parentElement.matches('a')) {
-          const link = document.createElement('a');
-          link.href = img.src;
-          link.className = 'glightbox';
-          img.parentNode.insertBefore(link, img);
-          link.appendChild(img);
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    document.querySelectorAll('.box img').forEach(img => {
+      if (!img.parentElement.matches('a')) {
+        const link = document.createElement('a');
+        link.href = img.src;
+
+        
+        if (img.closest('.gallery-swiper')) {
+          link.className = 'glightbox-gallery'; 
+        } else {
+          link.className = 'glightbox-single';  
         }
-      });
 
-      
-      GLightbox({
-        selector: '.glightbox',
-        touchNavigation: true,
-        loop: true
-      });
-
+        img.parentNode.insertBefore(link, img);
+        link.appendChild(img);
+      }
     });
 
-   
+    
+    GLightbox({
+      selector: '.glightbox-single',
+      touchNavigation: true,
+      loop: false
+    });
 
+    
+    GLightbox({
+      selector: '.glightbox-gallery',
+      touchNavigation: true,
+      loop: true
+    });
+  });
 </script>
+
 
 
 
