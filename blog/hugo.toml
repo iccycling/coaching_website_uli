@@ -1,11 +1,11 @@
-baseURL = "https://iccycling.github.io/coaching_website_uli/blog/public/"       # Basis für relative URLs
-languageCode = "en-us"
-title = "Coaching Blog"
+baseURL = "https://iccycling.github.io/coaching_website_uli/blog/"       # Basis für relative URLs
+languageCode = "de-DE"
+title = "Blog"
 theme = "ananke"
 
-# Relative URLs aktivieren
-relativeURLs = true
-canonifyURLs = true  # optional, sorgt dafür, dass Hugo keine absolute URL erzwingt
+# Empfohlen: lieber false als true
+relativeURLs = false
+canonifyURLs = true
 
 
 [pagination]

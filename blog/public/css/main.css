@@ -21,6 +21,16 @@
       box-sizing: border-box;
     }
 
+ /* Preview Image Querformat 3:2 über der Box */
+    .preview-img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      display: block;
+      background-color: #eee; /* Platzhalterfarbe falls kein Bild */
+    }
 
 
     /* Überschriften */
@@ -59,7 +69,7 @@
       max-width: 1920px;
       aspect-ratio: 16/9;
       overflow: hidden;
-      margin: 0 auto 4rem auto;
+      margin: 0 auto 2rem auto;
       /* unten 4rem Abstand */
       display: flex;
       justify-content: center;
@@ -220,23 +230,13 @@
       margin-bottom: 2rem;
       /* vertikaler Abstand zu allen nachfolgenden Elementen */
       max-width: 100%;
-      /*opacity: 0;
+      opacity: 0;
       transform: translateY(40px);
-      transition: transform 0.6s ease, opacity 0.6s ease;*/
+      transition: transform 0.6s ease, opacity 0.6s ease;
+      transition-delay: 0.3s; /* Delay einbauen */
       position: relative;
     }
 
-
- /* Preview Image Querformat 3:2 über der Box */
-    .preview-img {
-      width: 100%;
-      aspect-ratio: 3 / 2;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-      display: block;
-      background-color: #eee; /* Platzhalterfarbe falls kein Bild */
-    }
   
 
 /* Plus-Button */
@@ -278,7 +278,7 @@
     @media (max-width: 900px) {
       .two-boxes {
         flex-direction: column;
-        
+       
         /* vertikaler Abstand übernimmt margin-bottom der Boxen */
       }
 
@@ -641,5 +641,7 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
+
+.detail-hero { margin-bottom: 2rem;}
