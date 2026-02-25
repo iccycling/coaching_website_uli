@@ -1,4 +1,4 @@
-baseURL = "https://iccycling.github.io/coaching_website_uli/blog/"       # Basis für relative URLs
+baseURL = "https://iccycling.github.io/coaching_website_uli/blog/public/"       # Basis für relative URLs
 languageCode = "de-DE"
 title = "Blog"
 theme = "ananke"
