@@ -68,8 +68,8 @@
   width: 100vw;
   max-width: 1920px;
 
-  height: 100vh;        /* Bildschirmhöhe */
-  max-height: 100vh;    /* niemals höher */
+  height: 101vh;        /* Bildschirmhöhe */
+  max-height: 101vh;    /* niemals höher */
 
   overflow: hidden;
   margin: 0 auto 4rem auto;
